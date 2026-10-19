@@ -9,4 +9,4 @@ while True:
     time.sleep(updateTime);
     if (time.perf_counter()//1 % thresholdTime == 0):
         print("Threshold Reached");
-        subprocess.Popen(["python", "ToDo Remainder - Typ/Popup.py"])
+        subprocess.Popen(["python", "main/Popup.py"])
