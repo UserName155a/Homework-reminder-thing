@@ -43,7 +43,7 @@ def addBtn():
     userInput2.pack()
     tk.Button(popUp, text = "Remove", command = addBtnEnd).pack();
 
-userData_Path = "ToDo Remainder - Typ/UserData.json";
+userData_Path = "main.json";
 
 def refresh():
     for i in range(0, min(10, len(entries["Data"]))):
