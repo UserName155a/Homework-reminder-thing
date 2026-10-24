@@ -2,17 +2,28 @@ import time
 import subprocess
 import tkinter as tk
 import json
+import os
+import sys
 
 global thresholdTime, Loop;
 userInput = 0;
 popUp = None;
 labelMemoryLocations: list = [];
 timerLabel: list = [];
-userData_Path = "main/UserData.json";
 Loop = True;
 
-with open(userData_Path, "r") as file:
-    entries = json.loads(file.read());
+def get_json_path(filename):
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, "main", filename)
+
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(base_dir, filename)
+
+userData_Path = get_json_path("UserData.json")
+
+with open(userData_Path, "r") as f:
+    entries = json.load(f)
+
 
 start = time.perf_counter()//1; #Inital Time Set
 updateTime = 1;
@@ -106,6 +117,7 @@ def PopUp():
         global Loop;
         Loop = False;
         root.destroy();
+
     
     root = tk.Tk();
     root.option_add("*Font", "Monospace 10");
@@ -140,9 +152,11 @@ def PopUp():
     print(labelMemoryLocations);
     root.mainloop();
 
-# Timer
+# Timer!
 
+#subprocess.Popen(["python", "main/Popup.py"]);
 PopUp();
+
 while Loop:
     time.sleep(updateTime);
     TimerSettingsUpdate();
