@@ -20,4 +20,6 @@ How to use:
 
 1 - Install application:
 * On Linux: 
-    * 1) Install the executable file 'Main'
+    * 1 - Install the executable file 'Main'
+    * 2 - run '''cd Downloads''' (or the folder you downloaded file into)
+    * 3 - 
