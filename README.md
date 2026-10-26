@@ -32,24 +32,32 @@ How to use:
     * It just closes the popup, no drama
 * The 'Add' button
     * When clicked, a window will display:
+
         <img src = "/.readme/AddSc.png">
+
     * The first field is the name of the task, this is what will be shown on the Main screen
     * The second field doesn't have any real purpose, it does write to the .json file, but the string added is useless... for now
     * The button 'Add' will save your change and it will update the .json and the list on the Main screen
 * The 'Remove' button
     * When clicked, a window will display:
+
         <img src = "/.readme/RemoveSc.png">
+
     * The field is where you will specify the entry number you want to delete, it is best that you don't try to delete a task you can't see
     * The button 'Remove' will save your change and it will update the .json and the list on the Main screen
 * The 'Change popup interval' button
     * When clicked, a window will display:
+
         <img src = "/.readme/IntervalChangeSc.png>
+
     * The field is where you will specify the time between each popup, the number you enter is in SECONDS
     * The minimum will be 30 seconds
     * The button 'Change' will save your change and it will update the .json and the list on the Main screen
     * The text below the button will state the current interval
 3 - To permamently close the program
 * Click on the 'Remove' button and the following should appear:
+
     <img src = "/.readme/HardStop.png">
+
 * Typing in 'root' and clicking 'Remove' will end the program so it will not bother you again
 
