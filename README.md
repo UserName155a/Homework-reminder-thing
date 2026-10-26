@@ -1,6 +1,3 @@
-# Homework-reminder-thing
+# Homework Reminder Thing
 
-feels unfinished cuz it is
-
-HOW TO USE:
-
+<img src="/.readme/MainSc.png">
